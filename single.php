@@ -18,7 +18,7 @@
         <!-- END LOOP -->
             </div>
             <div class="two columns">
-                <p>Sidebar</p>
+                <p>Sidebar - This is a SINGLE POST PAGE</p>
             </div>
         </section>
 

@@ -16,8 +16,14 @@
         <!-- END LOOP -->
             </div>
             <div class="three columns">
-                <h4>Sidebar</h4>
-                <p>Sidebar paragraph...</p>
+            <!-- BEGIN SIDEBAR -->
+            <!-- Add Search Form -->
+                <?php get_search_form(); ?>
+                <!-- End Search Form -->
+                <?php get_sidebar(); ?>
+                <p>I'M RIGHT HERE AND I"M A PART OF A PAGE!!!</p>
+            <!-- END SIDEBAR -->
+            </div>
         </section>
 
 <?php get_footer(); ?>

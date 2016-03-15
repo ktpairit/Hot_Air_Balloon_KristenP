@@ -1,11 +1,6 @@
 <?php get_header(); ?>
 
     <div class="row">
-<!-- BEGIN SIDEBAR -->
-        <div class="three columns">
-            <?php sidebar(); ?>
-        </div>
-<!-- END SIDEBAR -->
         <div class="nine columns">
 <!-- BEGIN PAGE PHP -->
             <?php if (have_posts()) :
@@ -16,6 +11,15 @@
                 endwhile;
             endif; ?>
 <!-- END PAGE PHP -->
+        </div>
+        <div class="three columns">
+        <!-- BEGIN SIDEBAR -->
+        <!-- Add Search Form -->
+            <?php get_search_form(); ?>
+            <!-- End Search Form -->
+            <?php get_sidebar(); ?>
+            <p>I'M RIGHT HERE AND I"M A PART OF A PAGE!!!</p>
+        <!-- END SIDEBAR -->
         </div>
     </div>
 
