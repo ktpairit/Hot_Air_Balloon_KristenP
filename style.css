@@ -2,7 +2,7 @@
 Theme Name: Whimsical Theme
 Theme URI: URL for Kristen Blank
 Author: Kristen P
-Description: Blank theme for WIE course
+Description: P1 - Custom WordPress Template-
 Version: 0.1
 License: Open
 Text Domain: Kristen_P_blank_template
@@ -15,4 +15,30 @@ Text Domain: Kristen_P_blank_template
     color: #000000;
     font-size: 14px;
     line-height: 16px;
+}
+
+/*--Inline Menu--*/
+.blank-menu-header {
+background-color: rgba(67, 63, 140, .3); /*--#62718E grey--*/
+padding: 15px 10px;
+}
+.blank-menu-header ul {
+
+}
+.blank-menu-header ul li {
+    color: #433F8C; /*--blueviolet--*/
+    display: inline;
+    padding-right: 30px;
+}
+.blank-menu-header ul li a {
+    text-decoration: none;
+}
+.blank-menu-header ul li a:visited {
+    color: #433F8C; /*--blueviolet--*/
+}
+.blank-menu-header ul li a:hover {
+    color: #EF736D; /*--salmon--*/
+}
+.blank-menu-header ul li a:active {
+    color: #D741A7; /*--brightpink--*/
 }
