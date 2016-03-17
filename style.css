@@ -20,15 +20,15 @@ Text Domain: Kristen_P_blank_template
 /*--Inline Menu--*/
 .blank-menu-header {
 background-color: rgba(67, 63, 140, .3); /*--#62718E grey--*/
-padding: 15px 10px;
+padding-right: 30px;
 }
 .blank-menu-header ul {
-
+    padding: 15px 15px;
 }
 .blank-menu-header ul li {
     color: #433F8C; /*--blueviolet--*/
     display: inline;
-    padding-right: 30px;
+    padding-right: 40px;
 }
 .blank-menu-header ul li a {
     text-decoration: none;
