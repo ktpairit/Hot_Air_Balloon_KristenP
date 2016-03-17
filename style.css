@@ -42,3 +42,8 @@ padding-right: 30px;
 .blank-menu-header ul li a:active {
     color: #D741A7; /*--brightpink--*/
 }
+
+.single-post-thumbnail img {
+    height: auto;
+    max-width: 100%;
+}
