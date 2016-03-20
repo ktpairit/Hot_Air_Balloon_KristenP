@@ -12,38 +12,40 @@ Text Domain: Kristen_P_blank_template
 @import url("css/skeleton.css"); /*order of these files matter, note how the normalize is first and skeleton is second*/
 
 *{
-    color: #000000;
+    /*-- color: #000000; --*/
     font-size: 14px;
     line-height: 16px;
 }
-
-/*--Inline Menu--*/
+.headerImg img {
+    width: 1024px;
+    height: auto;
+}
 .blank-menu-header {
-background-color: rgba(67, 63, 140, .3); /*--#62718E grey--*/
+background-color: rgba(0, 0, 0, .2); /*--#62718E grey--*/
 padding-right: 30px;
+position: fixed;
+width: 994px; /*--Bc 1024 - 30 = 994--*/
 }
 .blank-menu-header ul {
-    padding: 15px 15px;
+    padding: 20px 50px 0px;
 }
 .blank-menu-header ul li {
-    color: #433F8C; /*--blueviolet--*/
     display: inline;
     padding-right: 40px;
 }
 .blank-menu-header ul li a {
+    color: #433F8C; /*--#433F8C; blueviolet--*/ /*-- #D741A7; /*--Bright Pink #D741A7--*/
     text-decoration: none;
 }
 .blank-menu-header ul li a:visited {
-    color: #433F8C; /*--blueviolet--*/
+    color: #433F8C; /*--#433F8C; blueviolet--*/ /*--#EF736D; /*--salmon #EF736D--*/
 }
 .blank-menu-header ul li a:hover {
-    color: #EF736D; /*--salmon--*/
-}
-.blank-menu-header ul li a:active {
-    color: #D741A7; /*--brightpink--*/
+    color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
 }
 
 .single-post-thumbnail img {
     height: auto;
     max-width: 100%;
 }
+/*--End of Inline Menu for Index.php--*/

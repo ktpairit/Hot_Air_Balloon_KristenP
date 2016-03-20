@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -51,13 +51,14 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 85%; }
   .column,
   .columns {
     margin-left: 4%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
+
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }

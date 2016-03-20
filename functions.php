@@ -1,5 +1,5 @@
 <?php
-/*-------------- Enable Widgets--------------- */
+/*-- Enable Widgets-- */
 
 function blank_widgets_init() {
     register_sidebar( array(
@@ -38,13 +38,24 @@ function blank_widgets_init() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+}
 
-    }
+/*-- Enable Widgets-- */
 add_action('widgets_init', 'blank_widgets_init');
 
-/*-------------- Enable Menu --------------- */
+/*-- Enable Menu --*/
 add_theme_support('menus');
 
-/*--- Enable Post Thumbnails ---*/
+/*-- Enable Header Image --*/
+add_theme_support('custom-header', array(
+    'width' => 1200,
+    'flex-width' => true,
+    'height' => 400,
+    'flex-height' => true,
+    'uploads' => true,
+    'header-text' => true,
+    ));
+
+/*-- Enable Post Thumbnails --*/
 add_theme_support('post-thumbnails');
 ?>

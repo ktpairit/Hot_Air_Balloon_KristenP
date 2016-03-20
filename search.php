@@ -5,6 +5,7 @@ get_header();
 
 <div class="row">
     <div class="eight columns">
+        <?php if( have_posts() ) :?>
             <h1>
                 <?php printf(
                     __('Search Results for: %s'),
@@ -30,5 +31,4 @@ get_header();
         <?php get_sidebar(); ?>
     </div>
 </div>
-
 <?php get_footer(); ?>
