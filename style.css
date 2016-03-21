@@ -13,8 +13,12 @@ Text Domain: Kristen_P_blank_template
 
 * {
     /*-- color: #000000; --*/
-    font-size: 1em;
+    font-size: 1.05em;
     line-height: 2.1rem;
+}
+
+h1 {
+    2em
 }
 
 a {
@@ -25,21 +29,25 @@ body {
     /* background-image: url("img/bgImg.png"); */
     background-repeat: repeat;
     color: #6f6f6f;
-    font-weight: lighter;
+    font-weight: 100;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .topLine {
-    border-top: 5px solid #62718e; /* #62718e; lighterblue--*/
+    border-top: 3px solid #62718e; /* #62718e; lighterblue--*/
     padding: 50px 50px;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 section {
     width: 1100px;
     margin: auto;
 }
+
+/*
 h3 a {
     color: #EF736D; /*--#EF736D; /*--salmon #EF736D--*/;
 }
+*/
 
 /*--Beginning of Inline Menu for Header.php--*/
 .headerImg {
@@ -73,23 +81,30 @@ h3 a {
 }
 .blank-menu-header ul li a:hover {
     /* color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
-    opacity: .9;
+    opacity: .8;
 }
 
 /*--Below is to get the header verbiage to float on top of headerImg-*/
 .headerDiv {
     position: inherit;
+    box-shadow: 1px 1px 1px #d1d1d1;
 }
 .headerVerbiage {
+    font-size: 1.2em;
     position: absolute;
-    top: 19%;
-    left: 8%;
+    top: 450px;
+    left: 80px;
+    padding-right: 30px;
 }
-.headerVerbiage a {
+.headerVerbiage  {
     color: #62718e; /*--#62718e; lighterblue--*/
     /* text-decoration: none */
+    font-size: 1.8em;
 }
-.headerVerbiage h3 {
+.headerVerbiage a {
+    /*font-family: 'Codystar', cursive;*/
+    font-family: 'Londrina Outline', cursive;
+    font-size: 2.1em;
     color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
 }
 /*--End of Inline Menu for Header.php--*/
@@ -97,12 +112,51 @@ h3 a {
 
 /*--Beginning of Posts for Index.php--*/
 .index-post-thumbnail {
-    width: 100%;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
 }
 .index-post-thumbnail img {
-    width: 100%;
+    /*width: 500px; /*--Must make sure all thumbnail images have WIDTH = 500px!!--*/
     height: auto;
+    border: 1px solid #e1e1e1;
 }
+.indexPosts {
+    border: #e1e1e1 1px solid;
+    margin: 25px 0;
+    padding: 30px 30px;
+}
+.postVerbiage {
+    padding: 10px 15px 0;
+}
+.postVerbiage h3 a {
+    color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
+}
+.postVerbiage h3 a:hover {
+    opacity: .8;
+}
+.postDate {
+    color: #6f6f6f;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+.viewMore a {
+    background-color: #9ed0b2; /*--#EF736D;/*--salmon #EF736D--*/;
+    border: 1px #e1e1e1 solid;
+    border-radius: 2px;
+/* box-shadow: 1px 1px 1px #E1E1E1; */
+    color: #6f6f6f;
+    float: right;
+    font-size: 1.1em;
+    margin: 0 10% 5% 0;
+    padding: 11px 20px;
+    text-align: center;
+    text-align: center;
+}
+.viewMore a:hover {
+    opacity: .8;
+}
+/*--End of Posts for Index.php--*/
 
 /*--Beginning of Front Page Sidebar--*/
 .widget-frontpage {
@@ -132,16 +186,8 @@ h3 a {
     color: #433f8c; /*--#62718e; lighterblue--*/;
     cursor: pointer;
 }
-
-/*--
-.widget-frontpage.textwidget h5 {
-    color: #433F8C; --#433F8C; blueviolet--*
-} --*/
-
 /*--End of Front Page Sidebar--*/
 
-
-/*--End of Posts for Index.php--*/
 
 
 /*--Beginning of Posts for Single.php--*/
@@ -154,6 +200,6 @@ h3 a {
 /*--Beginning of Footer--*/
 footer {
     background-color: #62718e; /*--#62718e; lighterblue--*/
-    padding: 40px  0;
+    padding: 80px  0;
 }
 
