@@ -21,13 +21,15 @@
                 ));?>
             </div>
             <!--End of Menu-->
-            <div class="row">
+            <div class="row headerDiv">
                 <div class="twelve columns">
                     <div class="headerImg">
                         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
                     </div>
-                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-                    <p><?php bloginfo('description'); ?></p>
+                    <div class="headerVerbiage">
+                        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+                        <h3><?php bloginfo('description'); ?></h3>
+                    </div>
                 </div>
             </div>
         </header>

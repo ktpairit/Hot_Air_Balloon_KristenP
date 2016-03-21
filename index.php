@@ -1,32 +1,43 @@
 <?php get_header(); ?>
 
-        <section class="row">
-            <div class="nine columns">
+        <section class="row topLine">
+            <div class="nine columns posts">
         <!--Begin Loop-->
                 <?php
                 if ( have_posts() ) {
                     while ( have_posts() ) {
                         the_post(); ?>
-                        <h3><?php the_title(); ?></h3>
 
+                <div class="row">
+                    <div class="four columns index-post-thumbnail">
+                    <!--image-->
                         <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('thumbnail');
+                            the_post_thumbnail('medium');
                         } ?>
+                    </div>
 
+                    <div class="eight columns">
+                    <!--title-->
+                        <h3>
+                            <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?></a>
+                        </h3>
+                    <!--excerpt-->
                         <?php the_excerpt(); ?>
+                    <!--read more-->
                         <a href="<?php the_permalink(); ?>">Read More...</a>
+                    </div>
+                </div>
+
                     <?php } // end while
                 } // end if
                 ?>
-        <!--End Loop-->
             </div>
+            <!--End Loop-->
+
             <div class="three columns">
             <!--Begin Sidebar-->
-            <!--Add Search Form-->
-                <?php get_search_form(); ?>
-                <!--End Search Form-->
-                <?php get_sidebar(); ?>
-                <p>I'M RIGHT HERE AND I"M A PART OF A PAGE!!!</p>
+                <?php dynamic_sidebar('front-page'); ?>
             <!--End Sidebar-->
             </div>
         </section>

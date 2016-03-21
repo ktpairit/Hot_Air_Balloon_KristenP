@@ -17,8 +17,8 @@ function blank_widgets_init() {
         'description' => 'Widget for our left side of our footer',
         'before_widget' => '<div class="widget-sidebar widget-footer">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h5>',
+        'after_title' => '</h5>'
     ));
         register_sidebar( array(
         'name' => 'Footer Middle',
@@ -26,8 +26,8 @@ function blank_widgets_init() {
         'description' => 'Widget for our middle of our footer',
         'before_widget' => '<div class="widget-sidebar widget-footer">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h5>',
+        'after_title' => '</h5>'
     ));
         register_sidebar( array(
         'name' => 'Footer Right',
@@ -35,8 +35,17 @@ function blank_widgets_init() {
         'description' => 'Widget for our right side of our footer',
         'before_widget' => '<div class="widget-sidebar widget-footer">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h5>',
+        'after_title' => '</h5>'
+    ));
+        register_sidebar( array(
+        'name' => 'Front Page Sidebar',
+        'id' => 'front-page',
+        'description' => 'Widget for Front page sidebar',
+        'before_widget' => '<div class="widget-sidebar widget-frontpage">',
+        'after_widget' => '</div>',
+        'before_title' => '<h5>',
+        'after_title' => '</h5>'
     ));
 }
 
