@@ -8,7 +8,6 @@
                     while ( have_posts() ) {
                         the_post(); ?>
 
-
                     <div class="row indexPosts">
                         <div class="four columns index-post-thumbnail">
                         <!--image-->
@@ -49,7 +48,6 @@
                         </div>
                     </div>
 
-
                     <?php } // end while
                 } // end if
                 ?>
@@ -58,6 +56,9 @@
 
             <div class="three columns">
             <!--Begin Sidebar-->
+                <!-- Add Search Form -->
+                <?php get_search_form(); ?>
+                <!-- End Search Form -->
                 <?php dynamic_sidebar('front-page'); ?>
             <!--End Sidebar-->
             </div>

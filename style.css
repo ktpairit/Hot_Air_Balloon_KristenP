@@ -35,7 +35,7 @@ body {
 }
 .topLine {
     border-top: 3px solid #62718e; /* #62718e; lighterblue--*/
-    padding: 50px 50px;
+    padding: 30px 50px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -184,7 +184,7 @@ input[type="search"] {
 /*--End of Posts for Index.php--*/
 
 /*--Beginning of Front Page Sidebar--*/
-.widget-frontpage, .widget-pages .widget-singles, .widget-archives {
+.widget-frontpage, .widget-pages, .widget-singles, .widget-archives {
     background-color: #fff;
     border: 1px solid #d1d1d1;
     border-radius: 2px;
