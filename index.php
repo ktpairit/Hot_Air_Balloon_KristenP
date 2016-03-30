@@ -24,9 +24,22 @@
                                 <?php the_title(); ?></a>
                             </h3>
                             <!--date-->
-                            <p class="postDate">
-                                <?php the_date(); ?>
-                            </p>
+                            <div class="postSubHeader">
+                                <p class="postDate">
+                                    <?php the_date(); ?>
+                                 </p>
+                                <p class="postComment">Comments <?php
+                                    $args = array(
+                                        'post_id' => 1, // use post_id, not post_ID
+                                        'count' => true //return only the count
+                                    );
+                                    $comments = get_comments($args);
+                                    echo $comments
+                                    ?>
+                                </p>
+                                <p class="postAuthor">&hearts; <?php the_author(); ?>
+                                </p>
+                            </div>
                         <!--excerpt-->
                             <?php the_excerpt(); ?>
                         <!--read more-->

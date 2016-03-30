@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 <?php wp_head(); ?>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600,400|Codystar:400,300|Londrina+Outline' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>

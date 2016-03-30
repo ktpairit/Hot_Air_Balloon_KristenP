@@ -7,8 +7,6 @@ get_header(); ?>
 <section class="row">
     <div class="nine columns">
         <?php if ( have_posts() ) : ?>
-            <h2>Archives</h2>
-            <p>A Page for our Archives</p>
             <?php
             // The Loop
             while ( have_posts() ) : the_post();?>
@@ -18,7 +16,7 @@ get_header(); ?>
                         <?php the_title(); ?>
                     </a>
                 </h2>
-            <?php the_excerpt(); ?>
+            <?php the_content(); ?>
             <?php endwhile; ?>
             <!-- End Loop -->
             <?php else: ?>
@@ -30,15 +28,20 @@ get_header(); ?>
         <!--Add Search Form-->
             <?php get_search_form(); ?>
         <!--End Search Form-->
-        <h2>Archives by Month:</h2>
-        <ul>
-            <?php wp_get_archives('type=monthly'); ?>
-        </ul>
-        <h2>Archives by Category:</h2>
-        <ul>
-             <?php wp_list_categories(); ?>
-        </ul>
+        <?php dynamic_sidebar('archives-page'); ?>
+
+        <!--
+                <h2>Archives by Month:</h2>
+                <ul>
+                    <?php       //wp_get_archives('type=monthly'); ?>
+                </ul>
+                <h2>Archives by Category:</h2>
+                <ul>
+                     <?php      //wp_list_categories(); ?>
+                </ul>
+        -->
         <!--End Sidebar-->
+
         </div>
 
 </section>

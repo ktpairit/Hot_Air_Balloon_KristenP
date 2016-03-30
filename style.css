@@ -17,9 +17,9 @@ Text Domain: Kristen_P_blank_template
     line-height: 2.1rem;
 }
 
-h1 {
-    2em
-}
+/*h1 {
+    font-size: 2em;
+}*/
 
 a {
     text-decoration: none;
@@ -27,6 +27,7 @@ a {
 
 body {
     /* background-image: url("img/bgImg.png"); */
+    background-color: #fffafe;
     background-repeat: repeat;
     color: #6f6f6f;
     font-weight: 100;
@@ -39,8 +40,9 @@ body {
     margin-bottom: 30px;
 }
 section {
-    width: 1100px;
+    max-width: 1100px;
     margin: auto;
+    width: 100%;
 }
 
 /*
@@ -63,7 +65,7 @@ h3 a {
     position: fixed;
     width: 100%;
     z-index: 100;
-    box-shadow: 1px 1px 1px #E1E1E1;
+    box-shadow: 1px 1px 2px #d1d1d1;
 }
 .blank-menu-header ul {
     padding: 1.4% 10% 0;
@@ -90,44 +92,59 @@ h3 a {
     box-shadow: 1px 1px 1px #d1d1d1;
 }
 .headerVerbiage {
-    font-size: 1.2em;
     position: absolute;
     top: 450px;
     left: 80px;
     padding-right: 30px;
-}
-.headerVerbiage  {
     color: #62718e; /*--#62718e; lighterblue--*/
     /* text-decoration: none */
-    font-size: 1.8em;
 }
 .headerVerbiage a {
     /*font-family: 'Codystar', cursive;*/
     font-family: 'Londrina Outline', cursive;
-    font-size: 2.1em;
+    font-size: 2.2em;
     color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
 }
 /*--End of Inline Menu for Header.php--*/
 
 
 /*--Beginning of Posts for Index.php--*/
+
+/*--Beginning of the Search Form--*/
+.wie-search-form:hover {
+    opacity: .8;
+}
+.search-bar-icon {
+    text-align: left;
+}
+input[type="search"] {
+    padding: 10px;
+    border-radius: 2px;
+}
+/*--End of the Search Form--*/
+
+
 .index-post-thumbnail {
-    width: 250px;
-    height: 350px;
     overflow: hidden;
 }
 .index-post-thumbnail img {
-    /*width: 500px; /*--Must make sure all thumbnail images have WIDTH = 500px!!--*/
-    height: auto;
-    border: 1px solid #e1e1e1;
+    height: 425px;
+    width: auto;
 }
 .indexPosts {
-    border: #e1e1e1 1px solid;
-    margin: 25px 0;
-    padding: 30px 30px;
+    background-color: #FFF;
+    border: #d1d1d1 1px solid;
+    border-radius: 2px;
+    /*box-shadow: 1px 1px 1px #d1d1d1;*/
+    max-height: 425px;
+    margin: 20px 0px 50px;
+    overflow: hidden;
 }
 .postVerbiage {
-    padding: 10px 15px 0;
+    padding: 40px 30px 40px 15px;
+}
+.postVerbiage h3 {
+    color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
 }
 .postVerbiage h3 a {
     color: #D741A7; /*-- #D741A7; Bright Pink #D741A7;--*/
@@ -135,10 +152,18 @@ h3 a {
 .postVerbiage h3 a:hover {
     opacity: .8;
 }
-.postDate {
-    color: #6f6f6f;
+.postComment {
+    padding: 0px 40px 0px;
+}
+.postDate .postComment .postAuthor {
     font-size: 1.3em;
-    font-weight: 100;
+}
+.postSubHeader {
+    margin-bottom: 22px;
+}
+.postSubHeader p {
+    color: #62718e;
+    display: inline;
 }
 .viewMore a {
     background-color: #9ed0b2; /*--#EF736D;/*--salmon #EF736D--*/;
@@ -148,7 +173,7 @@ h3 a {
     color: #6f6f6f;
     float: right;
     font-size: 1.1em;
-    margin: 0 10% 5% 0;
+    margin: 0 10% 6% 0;
     padding: 11px 20px;
     text-align: center;
     text-align: center;
@@ -159,14 +184,15 @@ h3 a {
 /*--End of Posts for Index.php--*/
 
 /*--Beginning of Front Page Sidebar--*/
-.widget-frontpage {
-    border: 1px solid #e1e1e1;
+.widget-frontpage, .widget-pages .widget-singles, .widget-archives {
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
     border-radius: 2px;
     padding: 25px 20px;
-    margin: 25px 0;
+    margin: 20px 0px 50px;
     text-align: center;
 }
-.widget-frontpage h5 {
+.widget-frontpage h3, .widget-pages h3, .widget-singles h3, .widget-archives h3 {
     color: #EF736D; /*--#EF736D;/*--salmon #EF736D--*/;
     font-weight: lighter;
 }
@@ -178,17 +204,15 @@ h3 a {
     margin-bottom: 15px;
     width: 13rem;
 }
-.widget-frontpage ul, .widget-sidebar ul {
+.widget-frontpage ul, .widget-sidebar ul, .widget-pages ul, .widget-singles ul, .widget-archives ul {
     list-style-type: none;
 }
-.widget-frontpage ul li a, .widget-sidebar ul li a {
+.widget-frontpage ul li a, .widget-sidebar ul li a, .widget-pages ul li a, .widget-singles ul li a, .widget-archives ul li a {
     text-decoration: none;
     color: #433f8c; /*--#62718e; lighterblue--*/;
     cursor: pointer;
 }
 /*--End of Front Page Sidebar--*/
-
-
 
 /*--Beginning of Posts for Single.php--*/
 .single-post-thumbnail img {
@@ -200,6 +224,12 @@ h3 a {
 /*--Beginning of Footer--*/
 footer {
     background-color: #62718e; /*--#62718e; lighterblue--*/
-    padding: 80px  0;
+    box-shadow: 0px -2px 2px #d1d1d1;
+    padding: 80px 0;
 }
-
+.footerCopyRight {
+    color: #9ed0b2;
+    font-size: 1.4em;
+    font-weight: 100;
+    text-align: center;
+}

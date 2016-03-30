@@ -2,15 +2,6 @@
 /*-- Enable Widgets-- */
 
 function blank_widgets_init() {
-    register_sidebar( array(
-        'name' => 'First Widget',
-        'id' => 'first-widget',
-        'description' => 'Widget for our sidebar on pages',
-        'before_widget' => '<div class="widget-sidebar">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
         register_sidebar( array(
         'name' => 'Footer Left',
         'id' => 'footer-left',
@@ -20,7 +11,7 @@ function blank_widgets_init() {
         'before_title' => '<h5>',
         'after_title' => '</h5>'
     ));
-        register_sidebar( array(
+        /* register_sidebar( array(
         'name' => 'Footer Middle',
         'id' => 'footer-middle',
         'description' => 'Widget for our middle of our footer',
@@ -28,7 +19,7 @@ function blank_widgets_init() {
         'after_widget' => '</div>',
         'before_title' => '<h5>',
         'after_title' => '</h5>'
-    ));
+    )); */
         register_sidebar( array(
         'name' => 'Footer Right',
         'id' => 'footer-right',
@@ -44,8 +35,44 @@ function blank_widgets_init() {
         'description' => 'Widget for Front page sidebar',
         'before_widget' => '<div class="widget-sidebar widget-frontpage">',
         'after_widget' => '</div>',
-        'before_title' => '<h5>',
-        'after_title' => '</h5>'
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+        register_sidebar( array(
+        'name' => 'Archives Sidebar',
+        'id' => 'archives-page',
+        'description' => 'Widget for Front page sidebar',
+        'before_widget' => '<div class="widget-sidebar widget-frontpage widget-archives">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+        register_sidebar( array(
+        'name' => 'Pages Widget',
+        'id' => 'pages-widget',
+        'description' => 'Widget for our sidebar on pages',
+        'before_widget' => '<div class="widget-sidebar widget-pages">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+        register_sidebar( array(
+        'name' => 'Singles Left Widget',
+        'id' => 'single-left-widget',
+        'description' => 'Widget for our left sidebar on single posts',
+        'before_widget' => '<div class="widget-sidebar widget-pages widget-singles">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+        register_sidebar( array(
+        'name' => 'Singles Right Widget',
+        'id' => 'single-right-widget',
+        'description' => 'Widget for our right sidebar on single posts',
+        'before_widget' => '<div class="widget-sidebar widget-pages widget-singles">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
     ));
 }
 

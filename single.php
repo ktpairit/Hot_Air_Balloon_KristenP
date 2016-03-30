@@ -2,7 +2,9 @@
 
         <section class="row">
             <div class="two columns">
-                <p>Sidebar</p>
+            <!--Begin Sidebar-->
+                <?php dynamic_sidebar('single-left-widget'); ?>
+            <!--End Sidebar-->
             </div>
             <div class="eight columns">
         <!-- BEGIN LOOP -->
@@ -27,9 +29,13 @@
                 ?>
         <!-- END LOOP -->
             </div>
+
             <div class="two columns">
-                <p>Sidebar - This is a SINGLE POST PAGE</p>
+            <!--Begin Sidebar-->
+                <?php dynamic_sidebar('single-right-widget'); ?>
+            <!--End Sidebar-->
             </div>
+
         </section>
 
 <?php get_footer(); ?>

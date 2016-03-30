@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-    <div class="row">
-        <div class="nine columns">
+    <section class="row">
+        <div class="nine columns postVerbiage">
 <!-- BEGIN PAGE PHP -->
             <?php if (have_posts()) :
                 /* OUR DATA CONTEXT IS DEFINED  */
                 while (have_posts()) : the_post(); ?>
-                    <h2><?php the_title(); ?></h2>
+                    <h3><?php the_title(); ?></h3>
                     <?php the_content();
                 endwhile;
             endif; ?>
@@ -17,10 +17,9 @@
         <!-- Add Search Form -->
             <?php get_search_form(); ?>
             <!-- End Search Form -->
-            <?php get_sidebar(); ?>
-            <p>I'M RIGHT HERE AND I"M A PART OF A PAGE!!!</p>
+            <?php dynamic_sidebar('pages-widget'); ?>
         <!-- END SIDEBAR -->
         </div>
-    </div>
+    </section>
 
 <?php get_footer(); ?>
